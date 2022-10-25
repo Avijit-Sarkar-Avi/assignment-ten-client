@@ -44,7 +44,7 @@ const Header = () => {
                                 user?.uid ?
                                     <>
                                         <span>{user?.displayName}</span>
-                                        <Button variant='info' onClick={handleLogOut}>LogOut</Button>
+                                        <Button variant='info' onClick={handleLogOut}>Log Out</Button>
                                     </>
                                     :
                                     <>
@@ -58,7 +58,7 @@ const Header = () => {
                         <Nav.Link eventKey={2} href="#memes">
                             {user?.photoURL ?
                                 <Image
-                                    style={{ height: '30px' }} roundedCircle src={user.photoURL}>
+                                    style={{ height: '30px' }} roundedCircle src={user?.photoURL}>
                                 </Image>
                                 :
                                 <FaUser></FaUser>
