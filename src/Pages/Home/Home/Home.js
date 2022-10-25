@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import detailCard from '../../Shared/Cards/Card/detailCard';
+import CardDetail from '../../Shared/Cards/CardDetail/CardDetail';
+
 
 const Home = () => {
     const allDetails = useLoaderData();
@@ -8,10 +9,11 @@ const Home = () => {
         <div>
             <h2>Total Data: {allDetails.length}</h2>
             {
-                allDetails.map(detail => <detailCard
+                allDetails.map(detail => <CardDetail
                     key={detail.id}
                     detail={detail}
-                ></detailCard>)
+                ></CardDetail>
+                )
             }
         </div>
     );
