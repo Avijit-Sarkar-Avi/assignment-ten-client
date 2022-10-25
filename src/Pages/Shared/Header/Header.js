@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 import SideNav from '../SideNav/SideNav';
 
 
@@ -16,7 +17,7 @@ const Header = () => {
                     className="d-inline-block align-top rounded"
                     alt="React Bootstrap logo"
                 />
-                <Navbar.Brand href="#home">Programming Course</Navbar.Brand>
+                <Navbar.Brand > <Link className="text-decoration-none text-dark" to='/'>Programming Course</Link> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
