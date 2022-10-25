@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import detailCard from '../../Shared/Cards/Card/detailCard';
 
 const Home = () => {
     const allDetails = useLoaderData();
