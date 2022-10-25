@@ -33,7 +33,7 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link> <Link className="text-decoration-none text-dark" to='/'>Course</Link> </Nav.Link>
+                        <Nav.Link> <Link className="text-decoration-none text-dark" to='/'>Tutorial</Link> </Nav.Link>
                         <Nav.Link> <Link className="text-decoration-none text-dark" to='/blog'>Blog</Link> </Nav.Link>
                         <Nav.Link>FAQ</Nav.Link>
 
