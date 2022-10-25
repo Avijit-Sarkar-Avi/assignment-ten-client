@@ -18,7 +18,8 @@ const SideNav = () => {
                 {
                     courses.map(course => <ListGroup className='mb-2' >
                         < ListGroup.Item key={course.id}>
-                            <Link to={`/course/${course.id}`}>{course.name}</Link>
+                            <Link className="text-decoration-none"
+                                to={`/course/${course.id}`}>{course.name}</Link>
                         </ListGroup.Item>
                     </ListGroup>)
                 }
