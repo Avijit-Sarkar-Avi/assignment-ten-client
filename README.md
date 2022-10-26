@@ -3,7 +3,7 @@
 
 ### Live Site Link
 
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [https://assignment-10-89875.web.app](https://assignment-10-89875.web.app) to view it in your browser.
 
 
 ### Features and Functionality in this website
