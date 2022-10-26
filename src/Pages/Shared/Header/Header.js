@@ -36,9 +36,10 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link> <Link className="text-decoration-none text-dark" to='/'>Tutorial</Link> </Nav.Link>
+                        <Nav.Link> <Link className="text-decoration-none text-dark" to='/tutorial'>Tutorial</Link> </Nav.Link>
                         <Nav.Link> <Link className="text-decoration-none text-dark" to='/blog'>Blog</Link> </Nav.Link>
-                        <Nav.Link>FAQ</Nav.Link>
+                        <Nav.Link> <Link className="text-decoration-none text-dark" to='/faq'>FAQ</Link> </Nav.Link>
+
                         <Nav.Link>
                             <ReactSwitch
                                 onChange={toggleTheme} checked={theme === "blue"}
@@ -63,7 +64,7 @@ const Header = () => {
 
 
                         </Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
+                        <Nav.Link eventKey={2}>
                             {user?.photoURL ?
                                 <Image
                                     style={{ height: '30px' }} roundedCircle src={user?.photoURL}>

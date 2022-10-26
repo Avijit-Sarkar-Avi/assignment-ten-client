@@ -16,9 +16,9 @@ const Main = () => {
                     <Col lg="8">
                         <Outlet></Outlet>
                     </Col>
-
                 </Row>
             </Container>
+
         </div>
     );
 };

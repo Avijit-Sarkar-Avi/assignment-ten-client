@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from 'firebase/auth'
 import app from '../../firebase/firebase.config';
-import Header from '../../Pages/Shared/Header/Header';
+
 
 export const AuthContext = createContext();
 
@@ -57,10 +57,9 @@ const AuthProvider = ({ children }) => {
 
     return (
         <AuthContext.Provider value={authInfo}>
-            <>
-                {children}
-                <Header></Header>
-            </>
+
+            {children}
+
         </AuthContext.Provider>
     );
 };

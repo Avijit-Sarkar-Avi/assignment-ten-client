@@ -14,6 +14,8 @@ const Courses = () => {
                     detail={detail}
                 ></CardDetail>)
             }
+
+
         </div>
     );
 };
