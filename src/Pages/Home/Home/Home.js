@@ -7,14 +7,15 @@ const Home = () => {
     const allDetails = useLoaderData();
     return (
         <div>
-            <h2>Total Data: {allDetails.length}</h2>
-            {
-                allDetails.map(detail => <CardDetail
-                    key={detail.id}
-                    detail={detail}
-                ></CardDetail>
-                )
-            }
+            <div>
+                {
+                    allDetails.map(detail => <CardDetail
+                        key={detail.id}
+                        detail={detail}
+                    ></CardDetail>
+                    )
+                }
+            </div>
         </div>
     );
 };

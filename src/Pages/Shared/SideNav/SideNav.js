@@ -13,7 +13,7 @@ const SideNav = () => {
 
     return (
         <div>
-            <h2>Side Nav from router: {courses.length}</h2>
+
             <div>
                 {
                     courses.map(course => <ListGroup className='mb-2' >

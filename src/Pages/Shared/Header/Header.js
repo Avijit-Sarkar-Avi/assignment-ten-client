@@ -5,11 +5,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { FaUser } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import ReactSwitch from 'react-switch';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 import SideNav from '../SideNav/SideNav';
 
 
 const Header = () => {
+
+    const { theme, toggleTheme } = useContext(AuthContext);
 
     const { user, logOut } = useContext(AuthContext);
 
@@ -20,7 +23,7 @@ const Header = () => {
     }
 
     return (
-        <Navbar collapseOnSelect className='mb-4' expand="lg" bg="light" variant="light">
+        <Navbar collapseOnSelect className='mb-4' expand="lg" bg="light" variant="light" >
             <Container>
                 <img
                     src="https://cdn2.vectorstock.com/i/1000x1000/53/36/robotics-robot-programming-icon-vector-28815336.jpg"
@@ -36,10 +39,15 @@ const Header = () => {
                         <Nav.Link> <Link className="text-decoration-none text-dark" to='/'>Tutorial</Link> </Nav.Link>
                         <Nav.Link> <Link className="text-decoration-none text-dark" to='/blog'>Blog</Link> </Nav.Link>
                         <Nav.Link>FAQ</Nav.Link>
+                        <Nav.Link>
+                            <ReactSwitch
+                                onChange={toggleTheme} checked={theme === "blue"}
+                            ></ReactSwitch>
+                        </Nav.Link>
 
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#deets">
+                        <Nav.Link>
                             {
                                 user?.uid ?
                                     <>
